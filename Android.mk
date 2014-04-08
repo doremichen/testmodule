@@ -11,7 +11,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE:= testmodule
-
+LOCAL_PRELINK_MODULE:=false
 include $(BUILD_STATIC_LIBRARY)
 #############
 include $(CLEAR_VARS)
@@ -26,6 +26,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_WHOLE_STATIC_LIBRARIES := testmodule
 
+LOCAL_PRELINK_MODULE:=false
 include $(BUILD_SHARED_LIBRARY)
 ############
 include $(CLEAR_VARS)
